@@ -15,7 +15,6 @@ class Map extends React.Component {
       })
     });
 
-
     var map = new ol.Map({
       target: this.refs.mapContainer,
       layers: [
@@ -46,8 +45,8 @@ class Map extends React.Component {
     //this.state.map.addLayer(markerVectorLayer);
     var markersArray = [
     	{
-    	'latitude': 23.87,
-    	'longitude': 45.66,
+    	'latitude': 47.151726,
+    	'longitude': 27.587914,
     	'name': 'Iasi'
     	}
     ];

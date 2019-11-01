@@ -13,37 +13,51 @@ export function getMarkersLayer(markersArray){
  	return createMarkerLayer(markers);
 }
 
-function createMarker(marker){
-	console.log(marker.latitude);
-	console.log(marker.longitude);
+function createMarkerLayer(markers){
 
+	var labelStyle = createLabelStyle();
+
+	var vectorSource = new ol.source.Vector({
+	  features: markers
+	});
+	var markerVectorLayer = new ol.layer.Vector({
+	  source: vectorSource,
+	  style: function(feature) {
+	      var labelName = feature.get('name');
+	      var iconStyle = createIconStyle();
+	      labelStyle.getText().setText(labelName);
+	      return [iconStyle, labelStyle];
+	  }
+	});
+
+	return markerVectorLayer;
+}
+
+function createMarker(marker){
 	return new ol.Feature({
-		geometry: new ol.geom.Point(ol.proj.fromLonLat([27.587914, 47.151726])),
-		name: "6"
+		geometry: new ol.geom.Point(ol.proj.fromLonLat([marker.longitude, marker.latitude])),
+		name: marker.name
 	});
 }
 
-function createMarkerLayer(markers){
-	var colors = ['red', 'green', 'blue', 'black'];
-	var iconStyles = [];
-
-	colors.forEach(function(color) {
-	  iconStyles.push(new ol.style.Style({
+function createIconStyle(){
+	return new ol.style.Style({
 	    image:  new ol.style.Circle({
 	        radius: 6,
 	        stroke: new ol.style.Stroke({
 	            color: '#fff'
 	        }),
 	        fill: new ol.style.Fill({
-	            color: color
+	            color: 'red'
 	        })
 	    })
-	  }))
-	});
+	  });
+}
 
-	var labelStyle = new ol.style.Style({
+function createLabelStyle(){
+	return new ol.style.Style({
 	    text: new ol.style.Text({
-	        font: '12px Calibri,sans-serif',
+	        font: '22px Calibri,sans-serif',
 	        overflow: true,
 	        fill: new ol.style.Fill({
 	            color: '#000'
@@ -56,21 +70,6 @@ function createMarkerLayer(markers){
 	        offsetY: -8
 	    })
 	});
-
-	var vectorSource = new ol.source.Vector({
-	  features: markers
-	});
-	var markerVectorLayer = new ol.layer.Vector({
-	  source: vectorSource,
-	  style: function(feature) {
-	      var name = feature.get('name');
-	      var iconStyle = iconStyles[parseInt(name)%colors.length];
-	      labelStyle.getText().setText(name);
-	      return [iconStyle, labelStyle];
-	  }
-	});
-
-	return markerVectorLayer;
 }
   	
 
