@@ -1,5 +1,6 @@
 import React from 'react';
 import {getMarkersLayer} from './markerLayer.js';
+import {getRouteLayer} from './routeLayer.js';
 
 import ol from 'openlayers';
 import 'ol/ol.css';
@@ -35,25 +36,34 @@ class Map extends React.Component {
 	    });
    }
 
-  componentDidUpdate(prevProps, prevState) {
+  async componentDidUpdate(prevProps, prevState) {
     this.state.featuresLayer.setSource(
       new ol.source.Vector({
         features: this.props.routes
       })
     );
 
-    //this.state.map.addLayer(markerVectorLayer);
     var markersArray = [
     	{
     	'latitude': 47.151726,
     	'longitude': 27.587914,
     	'name': 'Iasi'
+    	},
+    	{
+    	'latitude': 46.7712,
+    	'longitude': 23.6236,
+    	'name': 'Cluj'
     	}
     ];
 
 
-	var markerVectorLayer = getMarkersLayer(markersArray);
-	this.state.map.addLayer(markerVectorLayer);
+	var markerLayer = getMarkersLayer(markersArray);
+
+	var routeLayer = await getRouteLayer(markersArray);
+
+	this.state.map.addLayer(markerLayer);
+    this.state.map.addLayer(routeLayer);
+
 	//this.state.map.getView().fit(markerVectorLayer.getSource().getExtent(), this.state.map.getSize());
   }
 
