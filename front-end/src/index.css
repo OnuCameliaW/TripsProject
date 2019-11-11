@@ -18,3 +18,43 @@ code {
     width: 100%;
     font-family: sans-serif;
 }
+.overlay{
+    background-color: #f2fcf5;
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    z-index: 100;
+}
+
+.menu {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.item {
+  padding: 2px 6px;
+  cursor: default;
+}
+
+.item-highlighted {
+  color: white;
+  background-color: #4095bf;
+}
+
+.item-header {
+  background-color: #eeeeee;
+  color: #454545;
+  font-weight: bold;
+}
+.autocompleteComponent{
+    margin-top: 20px;
+    width: 70%;
+    display: inline-block;
+}
+#states-autocomplete{
+    width: 250px;
+    height: 30px;
+}

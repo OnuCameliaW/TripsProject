@@ -1,0 +1,10 @@
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/bin/Debug/netcoreapp3.0/TripsData
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/bin/Debug/netcoreapp3.0/TripsData.deps.json
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/bin/Debug/netcoreapp3.0/TripsData.runtimeconfig.json
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/bin/Debug/netcoreapp3.0/TripsData.runtimeconfig.dev.json
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/bin/Debug/netcoreapp3.0/TripsData.dll
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/bin/Debug/netcoreapp3.0/TripsData.pdb
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/obj/Debug/netcoreapp3.0/TripsData.AssemblyInfoInputs.cache
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/obj/Debug/netcoreapp3.0/TripsData.AssemblyInfo.cs
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/obj/Debug/netcoreapp3.0/TripsData.dll
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsData/obj/Debug/netcoreapp3.0/TripsData.pdb

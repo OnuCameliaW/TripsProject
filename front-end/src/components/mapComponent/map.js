@@ -1,6 +1,8 @@
 import React from 'react';
 import {getMarkersLayer} from './markerLayer.js';
 import {getRouteLayer} from './routeLayer.js';
+import Overlay from '../overlayComponent/overlay.js';
+
 
 import ol from 'openlayers';
 import 'ol/ol.css';
@@ -8,8 +10,16 @@ import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 
 
 class Map extends React.Component {
-	componentDidMount() {
 
+constructor(props) {
+    super(props);
+    this.state = { 
+		map: null,
+	    featuresLayer: null
+	};
+  }
+
+	componentDidMount() {
     var featuresLayer = new ol.layer.Vector({
       source: new ol.source.Vector({
         features:[],
@@ -68,7 +78,12 @@ class Map extends React.Component {
   }
 
   render() {
-    return <div ref="mapContainer"> </div>;
+    return <div>
+		    	<Overlay 
+		    		map = {this.state.map}
+		    	/>
+		    	<div ref="mapContainer"> </div>
+    	</div>;
   }
 }
 export default Map;

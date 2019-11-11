@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "TripsDomain/1.0.0": {
+        "dependencies": {
+          "TripsData": "1.0.0"
+        },
+        "runtime": {
+          "TripsDomain.dll": {}
+        }
+      },
+      "TripsData/1.0.0": {
+        "runtime": {
+          "TripsData.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TripsDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TripsData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

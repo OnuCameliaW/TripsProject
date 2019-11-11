@@ -1,7 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trips", "Trips\Trips.csproj", "{B97135C3-91D3-4577-B3A8-C7A0994847E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripsController", "Trips\TripsController.csproj", "{B97135C3-91D3-4577-B3A8-C7A0994847E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripsData", "TripsData\TripsData.csproj", "{EC171669-78F4-419C-A139-CAB1A9CC490C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripsDomain", "TripsDomain\TripsDomain.csproj", "{B95A91B8-9A54-4060-9CDB-5A784782CC20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +17,13 @@ Global
 		{B97135C3-91D3-4577-B3A8-C7A0994847E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B97135C3-91D3-4577-B3A8-C7A0994847E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B97135C3-91D3-4577-B3A8-C7A0994847E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC171669-78F4-419C-A139-CAB1A9CC490C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC171669-78F4-419C-A139-CAB1A9CC490C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC171669-78F4-419C-A139-CAB1A9CC490C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC171669-78F4-419C-A139-CAB1A9CC490C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95A91B8-9A54-4060-9CDB-5A784782CC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95A91B8-9A54-4060-9CDB-5A784782CC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95A91B8-9A54-4060-9CDB-5A784782CC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95A91B8-9A54-4060-9CDB-5A784782CC20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

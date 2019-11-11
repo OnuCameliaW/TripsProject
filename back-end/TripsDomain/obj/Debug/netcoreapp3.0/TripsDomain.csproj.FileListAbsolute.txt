@@ -1,0 +1,15 @@
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsData
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsDomain
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsDomain.deps.json
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsDomain.runtimeconfig.json
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsDomain.runtimeconfig.dev.json
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsDomain.dll
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsDomain.pdb
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsData.dll
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/bin/Debug/netcoreapp3.0/TripsData.pdb
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/obj/Debug/netcoreapp3.0/TripsDomain.csprojAssemblyReference.cache
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/obj/Debug/netcoreapp3.0/TripsDomain.AssemblyInfoInputs.cache
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/obj/Debug/netcoreapp3.0/TripsDomain.AssemblyInfo.cs
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/obj/Debug/netcoreapp3.0/TripsDomain.csproj.CopyComplete
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/obj/Debug/netcoreapp3.0/TripsDomain.dll
+/Users/cameliaonu/Documents/TripsProject/back-end/TripsDomain/obj/Debug/netcoreapp3.0/TripsDomain.pdb
