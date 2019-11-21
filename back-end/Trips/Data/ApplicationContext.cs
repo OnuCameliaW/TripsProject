@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace TripsController.Data
+namespace Trips.Data
 {
     public class ApplicationContext : DbContext
     {

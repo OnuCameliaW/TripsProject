@@ -5,10 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Npgsql;
-using TripsController.Data;
+using Trips.Data;
+using Trips.Data.Interfaces;
+using Trips.Data.Repositories;
+using Trips.Domain.Interfaces;
+using Trips.Domain.Services;
 
-namespace Trips
+namespace Trips.Api
 {
     public class Startup
     {
@@ -22,16 +25,21 @@ namespace Trips
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationContext>(opt =>
-            opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
-
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
 
             services.AddControllers();
+            ConfigureDbServices(services);
+
+            services.AddScoped<IMarkerService, MarkerService>();
+            services.AddScoped<IMarkerRepository, MarkerRepository>();
+        }
+
+        private void ConfigureDbServices(IServiceCollection services)
+        {
+            services.AddDbContext<TripsDbContext>(op => op.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -54,8 +62,6 @@ namespace Trips
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPI(v1)");
             });
-
-
 
             app.UseEndpoints(endpoints =>
             {
